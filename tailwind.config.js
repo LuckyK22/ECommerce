@@ -22,6 +22,9 @@ export default {
       'charcoal' : '#36454F',
       'sBlack' : '#100C08',
     },
+    dropShadow: {
+      '2xl': '0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3)',
+    },
     extend: {},
   },
   plugins: [],

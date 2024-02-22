@@ -1,0 +1,50 @@
+.wave-group {
+    position: relative;
+}
+
+.wave-group .input {
+    font-size: 16px;
+    padding: 10px 10px 5px 30px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.wave-group .input:focus {
+    outline: none;
+}
+
+
+.wave-group .bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.wave-group .bar:before,
+.wave-group .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0.5px;
+    position: absolute;
+    background: #36454F;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+    left: 50%;
+}
+
+.wave-group .bar:after {
+    right: 50%;
+}
+
+.wave-group .input:focus~.bar:before,
+.wave-group .input:focus~.bar:after {
+    width: 50%;
+}

@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import "./Navbar.css"
 
 const navigation = [
     { name: 'Categories', href: '#', current: true },
@@ -18,7 +19,7 @@ export default function Navbar() {
         <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8 shadow-md bg-snow">
+                    <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8 shadow-md bg-bPowder">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
@@ -40,7 +41,7 @@ export default function Navbar() {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current ? ' text-black text-xl' : 'text-charcoal text-xl hover:bg-gray-700 hover:text-black',
+                                                    item.current ? ' text-black text-lg' : 'text-charcoal text-lg hover:bg-gray-700 hover:text-black',
                                                     'rounded-md px-3 py-2 font-medium'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
@@ -52,6 +53,15 @@ export default function Navbar() {
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center gap-3 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                                <button className='relative left-8 cursor-pointer'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-5 h-5 cursor-pointer">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                    </svg>
+                                </button>
+                                <div class="wave-group">
+                                    <input required="" type="text" class="input" placeholder='Search' />
+                                    <span class="bar"></span>
+                                </div>
                                 <button
                                     type="button"
                                     className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
