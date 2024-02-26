@@ -21,6 +21,11 @@ export default {
       'black' : '#000000',
       'charcoal' : '#36454F',
       'sBlack' : '#100C08',
+      'greyCloud': '#B6B6B4',
+
+      'blue' : '#0ba6ff',
+
+      'green' : '#57e32c',
     },
     dropShadow: {
       '2xl': '0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3)',
