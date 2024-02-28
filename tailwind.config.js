@@ -30,6 +30,9 @@ export default {
     dropShadow: {
       '2xl': '0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3)',
     },
+    fontFamily : {
+      'logo' : ['Grenze Gotisch', 'serif']
+    },
     extend: {},
   },
   plugins: [],

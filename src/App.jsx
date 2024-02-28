@@ -1,13 +1,15 @@
 
 import './App.css'
-import Home from './Components/HomePage/Home';
+import ProductDes from './Components/ProductDes'
+// import Home from './Components/HomePage/Home';
 
 
 function App() {
 
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <ProductDes />
     </>
   )
 }

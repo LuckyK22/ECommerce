@@ -1,59 +1,20 @@
 import React from 'react'
 import Product from '../Product'
+import Brands from './Brands'
 import Carousel from './Carousel'
 import Category from './Category'
+import Footer from './Footer'
 import Navbar from './Navbar'
-import Slider from "react-slick";
+import Services from './Services'
 
 
 function Home() {
-
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000
-    };
 
 
     return (
         <>
             <Navbar />
-            <div className='my-4 overflow-hidden'>
-                <Slider {...settings}>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Multiple Payment Options</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Fast Delivery Options</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Cash on Delivery</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Free Shipping</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Order Tracking</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Return and Exchange Policies</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Customer Support</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Product Reviews and Ratings</h1>
-                    </div>
-                    <div className=" bg-wSmoke border-1 border-y-2 border-abbey border-opacity-5">
-                        <h1 className='text-center'>Personalized Recommendations</h1>
-                    </div>
-                </Slider>
-            </div>
-
+            <Services />
             <Category />
             <Carousel />
             <div className='mx-auto max-w-full px-2 sm:px-6 lg:px-8 my-14'>
@@ -72,6 +33,8 @@ function Home() {
                     <Product images='https://rukminim2.flixcart.com/image/612/612/xif0q/bottle/b/t/c/1000-summer-cool-single-wall-stainless-steel-fridge-water-bottle-original-imaghvnzn5qa3qfs.jpeg?q=70' />
                 </div>
             </div>
+            <Brands />
+            <Footer />
         </>
     )
 }

@@ -43,7 +43,7 @@ export default function Category() {
 
     return (
         <div>
-            <div className='flex my-8 gap-16 justify-center'>
+            <div className='flex my-6 gap-16 justify-center'>
                 {category.map((item) => (
                     <button key={item.name} className="opacity-70 ">
                         <div key={item.name} className="text-center m-auto flex-wrap">
